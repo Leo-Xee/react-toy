@@ -1,5 +1,4 @@
 {
-  "root": true,
   "env": {
     "browser": true,
     "es6": true,
@@ -14,13 +13,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["airbnb", "airbnb-typescript", "plugin:prettier/recommended"],
   "plugins": ["prettier", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": ["error", { "endOfLine": "auto" }]
